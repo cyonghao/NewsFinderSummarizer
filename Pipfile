@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 newsapi-python = "*"
+"beautifulsoup4" = "*"
+lxml = "*"
+numpy = "*"
+nltk = "*"
 
 [dev-packages]
 
