@@ -10,7 +10,7 @@ def news_finder():
     top_headlines = top_headlines['articles']
     return top_headlines
 
-def summarizer(url):
+def summarizer():
     total_articles = []
 
     articles = news_finder()

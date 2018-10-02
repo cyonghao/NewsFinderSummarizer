@@ -6,7 +6,7 @@ import urllib.request
 
 def text_summarizer(url):
     # Obtaining the webpage
-    scraped_data = urllib.request.urlopen(user_url)
+    scraped_data = urllib.request.urlopen(url)
     article = scraped_data.read()
 
     # Parsing article
@@ -59,7 +59,7 @@ def text_summarizer(url):
                         sentence_scores[sentence] += word_frequencies[word]
 
     # Getting summary
-    summary_sentences = heapq.nlargest(7, sentence_scores, key=sentence_scores.get)
+    summary_sentences = heapq.nlargest(5, sentence_scores, key=sentence_scores.get)
     summary = ' '.join(summary_sentences)
     return (summary)
 
