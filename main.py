@@ -52,6 +52,6 @@ def main():
     send_email(email_body)
 
 if __name__ == '__main__':
-    newsapi = NewsApiClient(api_key=TOKEN)
+    newsapi = NewsApiClient(api_key='ed148100f1aa4950a86b05a0699004d0')
 
     main()
