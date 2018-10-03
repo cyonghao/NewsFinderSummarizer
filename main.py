@@ -4,7 +4,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from summarizer import text_summarizer
-from tokenconfig import TOKEN
 
 def news_finder():
     sources = 'associated-press,reuters'
